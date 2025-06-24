@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif; /* Font chữ mặc định */
+    margin: 0; /* Bỏ margin mặc định */
+    padding: 0; /* Bỏ padding mặc định */
+    background: url('roforest.gif') no-repeat center center fixed; /* Hình nền liên quan đến rừng */
+    background-size: cover; /* Đặt hình nền phủ đầy */
+    color: rgb(0, 0, 0); /* Màu chữ mặc định là đen */
+}
+
+.menu {
+    background-color: rgb(255, 255, 255); /* Màu nền cho menu */
+    display: flex; /* Sử dụng flexbox để căn chỉnh */
+    justify-content: space-between; /* Căn giữa và phân chia không gian */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 10px 20px; /* Khoảng cách bên trong menu */
+}
+
+.logo-container img {
+    height: 50px; /* Chiều cao logo */
+}
+
+.wrapper {
+    width: 400px; /* Chiều rộng của khung liên hệ */
+    padding: 40px; /* Khoảng cách bên trong khung */
+    background: rgba(255, 255, 255, 0.8); /* Nền trắng với độ trong suốt */
+    border-radius: 10px; /* Bo tròn các góc */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5); /* Đổ bóng cho khung */
+    margin: auto; /* Căn giữa khung */
+    margin-top: 100px; /* Khoảng cách từ trên xuống */
+}
+
+h2 {
+    text-align: center; /* Căn giữa tiêu đề */
+}
+
+.contact-form {
+    display: flex; /* Sử dụng flexbox để căn chỉnh các phần tử */
+    flex-direction: column; /* Xếp theo chiều dọc */
+}
+
+.input-box {
+    position: relative; /* Để có thể đặt nhãn ở vị trí tuyệt đối */
+    margin-bottom: 30px; /* Khoảng cách giữa các ô nhập liệu */
+}
+
+.input-box input,
+.input-box textarea {
+    width: 100%; /* Chiều rộng 100% */
+    padding: 10px; /* Khoảng cách bên trong */
+    border: 1px solid #ccc; /* Đường viền xung quanh */
+    border-radius: 5px; /* Bo tròn các góc */
+    font-size: 16px; /* Kích thước chữ */
+    color: #333; /* Màu chữ trong ô nhập liệu */
+}
+
+.input-box label {
+    position: absolute; /* Đặt nhãn ở vị trí tuyệt đối */
+    left: 10px; /* Căn trái 10px */
+    top: 10px; /* Căn trên 10px */
+    color: #999; /* Màu chữ nhãn */
+    transition: 0.2s; /* Hiệu ứng chuyển đổi cho nhãn */
+}
+
+/* Hiệu ứng khi ô nhập liệu được chọn hoặc không rỗng */
+.input-box input:focus + label,
+.input-box input:not(:placeholder-shown) + label,
+.input-box textarea:focus + label,
+.input-box textarea:not(:placeholder-shown) + label {
+    top: -10px; /* Đưa nhãn lên trên khi ô nhập liệu được chọn */
+    left: 10px; /* Căn trái 10px */
+    font-size: 12px; /* Kích thước chữ nhãn nhỏ hơn */
+    color: #000000; /* Màu chữ nhãn khi ô nhập liệu được chọn */
+}
+
+.btn {
+    padding: 10px; /* Khoảng cách bên trong nút */
+    width: 100%; /* Chiều rộng 100% */
+    background: #ff0000; /* Màu nền cho nút */
+    border: none; /* Bỏ đường viền */
+    border-radius: 5px; /* Bo tròn các góc của nút */
+    color: rgb(0, 0, 0); /* Màu chữ trong nút */
+    cursor: pointer; /* Hiển thị con trỏ chuột khi di chuột qua nút */
+    font-size: 16px; /* Kích thước chữ trong nút */
+    transition: background 0.3s; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+.btn:hover {
+    background: #4dff00; /* Màu nền khi di chuột qua nút */
+}
+
+footer {
+    text-align: center; /* Căn giữa nội dung */
+    padding: 20px; /* Khoảng cách bên trong footer */
+    background-color: rgba(255, 255, 255, 0.445); /* Màu nền cho footer */
+    color: rgb(0, 0, 0); /* Màu chữ trong footer */
+    position: relative; /* Để có thể căn chỉnh vị trí */
+    bottom: 0; /* Đặt footer ở dưới cùng */
+    width: 100%; /* Chiều rộng 100% */
+}
+
+footer p {
+    margin: 0; /* Bỏ margin mặc định */
+}
